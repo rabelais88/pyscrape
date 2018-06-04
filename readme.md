@@ -3,15 +3,32 @@
 ### basic howto with virtual environment
 
 1. establish virtual environment
+
 ```python3 venv -m [projectname]``` creates a new project
 
 2. activate virtual environment script from folder
+
 ```[projectname]/Scripts/activate.bat``` or ```activate```(Linux)
 
 Under virtual environment, python must be referred as ```python``` instead of any custom names(```py, python3```).
 
 3. after project, freeze the requirements
+
 ```pip freeze > requirements.txt```
 
 4. when downloaded from git, install all requirements
+
 ```pip install -r requirements.txt```
+
+5. add custom setup for python linting
+
+under ```./vscode/settings.json```:
+```
+{
+  "python.pythonPath": "${workspaceFolder}\\scraping1\\Scripts\\python.exe",
+  "python.linting.pep8Enabled": true,
+    "python.linting.pep8Args": [
+        "--ignore=E501,E111" 
+    ]
+}
+```
