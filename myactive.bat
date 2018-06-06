@@ -1,0 +1,2 @@
+cd scraping1\Scripts
+activate

@@ -20,15 +20,19 @@ Under virtual environment, python must be referred as ```python``` instead of an
 
 ```pip install -r requirements.txt```
 
-5. add custom setup for python linting
+5. add custom setup for python linting(to disable unncessary VScode no linter errors)
+
+ - E501, E111, E114: indentation related errors(for custom 2 spaced indentation)
 
 under ```./vscode/settings.json```:
 ```
 {
   "python.pythonPath": "${workspaceFolder}\\scraping1\\Scripts\\python.exe",
+  "python.linting.pylintPath":"${workspaceFolder}\\scraping1\\Scripts\\pylint.exe",
   "python.linting.pep8Enabled": true,
     "python.linting.pep8Args": [
-        "--ignore=E501,E111" 
-    ]
-}
+        "--ignore=E501,E111,E114" 
+    ],
+    "python.linting.enabled": true
+  }
 ```
