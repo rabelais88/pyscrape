@@ -3,7 +3,7 @@
   "python.linting.pylintPath":"${workspaceFolder}\\scraping1\\Scripts\\pylint.exe",
   "python.linting.pep8Enabled": true,
     "python.linting.pep8Args": [
-        "--ignore=E501,E111,E114" 
+        "--ignore=E501,E111,E114,E731" 
     ],
     "python.linting.enabled": true
   }
