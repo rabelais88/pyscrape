@@ -1,0 +1,7 @@
+linux environment
+
+-for lxml
+sudo apt-get -y libxml2-dev libxslt-dev libpython3-dev zlib1g-dev
+
+-for mysql
+sudo apt-get install -y mysql-server libmysqlclient-devlinux environment
