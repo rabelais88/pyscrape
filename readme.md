@@ -22,6 +22,8 @@ Under virtual environment, python must be referred as ```python``` instead of an
 
 *note* if it doesn't install, consider using ```pip3``` instead of ```pip```. 
 
+*note* unlike node repository, python virtual env is dedicated to a single OS. It's either for POSIX(Mac, Linux) or Windows. once it's created for Windows, it cannot be installed/run from Linux and vice versa. as you may have noticed, this example is created entirely from windows environment.
+
 5. add custom setup for python linting(to disable unncessary VScode no linter errors)
 
  - E501, E111, E114: indentation related errors(for custom 2 spaced indentation)
