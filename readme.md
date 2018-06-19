@@ -20,6 +20,8 @@ Under virtual environment, python must be referred as ```python``` instead of an
 
 ```pip install -r requirements.txt```
 
+*note* if it doesn't install, consider using ```pip3``` instead of ```pip```. 
+
 5. add custom setup for python linting(to disable unncessary VScode no linter errors)
 
  - E501, E111, E114: indentation related errors(for custom 2 spaced indentation)
