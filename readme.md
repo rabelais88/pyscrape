@@ -4,7 +4,7 @@
 
 1. establish virtual environment
 
-```python3 venv -m [projectname]``` creates a new project
+```python3 -m venv [projectname]``` creates a new project
 
 2. activate virtual environment script from folder
 
